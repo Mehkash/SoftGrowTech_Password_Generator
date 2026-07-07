@@ -1,36 +1,37 @@
-# Project 1 - File Organizer Tool
+# Project 2 - Password Generator Tool
 
-This is a simple Python project created for SoftGrowTech Task 2. The program organizes files automatically into separate folders based on their file types.
+This is a simple Python project created for SoftGrowTech Task 2. The program generates random passwords using letters, numbers, and special characters.
 
 ## Features
 
-- Scans files from a selected folder
-- Separates images, documents, videos, audio files, archives, code files, and other files
-- Creates folders automatically
-- Moves files into their correct folders
-- Shows a message after organizing files
+- Allows users to choose password length
+- Includes uppercase and lowercase letters
+- Includes numbers and special characters
+- Displays the generated password
+- Uses Python random module
 
 ## Technologies Used
 
 - Python
-- File handling
-- `pathlib` module
-- `shutil` module
+- Random module
+- String module
+- Functions
+- Loops
 
 ## How to Run
 
 Open the project folder in terminal and run:
 
 ```bash
-python file_organizer.py
+python password_generator.py
 ```
 
-Then enter the folder path you want to organize.
+Then enter the password length when asked.
 
 Example:
 
 ```text
-/Users/yourname/Downloads
+12
 ```
 
 ## Frontend
@@ -43,8 +44,9 @@ Open this file in a browser:
 frontend/index.html
 ```
 
-The frontend shows how selected files are grouped into different categories.
+The frontend includes:
 
-## Note
-
-The actual file moving is done by the Python file because browsers cannot directly move files on your computer for security reasons.
+- Password length input
+- Generate password button
+- Copy password button
+- Clean and simple design
