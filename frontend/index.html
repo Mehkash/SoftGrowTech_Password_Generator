@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="app-card">
+            <p class="tag">SoftGrowTech Task 2</p>
+            <h1>Password Generator Tool</h1>
+            <p class="intro">
+                Create a random password using letters, numbers, and special characters.
+            </p>
+
+            <div class="form-row">
+                <label for="passwordLength">Choose Password Length</label>
+                <input id="passwordLength" type="number" min="1" max="64" value="12">
+            </div>
+
+            <button id="generateButton" class="generate-button" type="button">
+                Generate Password
+            </button>
+
+            <div class="password-box">
+                <p id="passwordResult">Your password will appear here</p>
+                <button id="copyButton" class="copy-button" type="button">Copy</button>
+            </div>
+
+            <p id="message" class="message">Enter a length and click the button.</p>
+
+            <div class="run-box">
+                <span>Run Python File</span>
+                <code>python password_generator.py</code>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
